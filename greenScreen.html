@@ -1,0 +1,24 @@
+<script type="text/javascript" src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"> 
+</script>
+
+<div>
+<h1>Greenscreen Webpage</h1>
+Upload any two complementary images to the greenscreen formatter, the output will be a single image containing the combination of your greenscreen image and a chosen background.
+</div>
+  
+<canvas id = "bgImg"></canvas>
+<canvas id = "fgImg"></canvas>
+
+<p>
+Load Background Image: <input id = "bgFileIn" type = "file" multiple = "false" accept = "image/*" onchange = "loadBgImg()">
+</p>
+
+<p>
+Load Foreground (Greenscreen) Image: <input id = "fgFileIn" type = "file" multiple = "false" accept = "image/*" onchange = "loadFgImg()">
+</p>
+
+<p>
+Create Composite: <input type = "button" value = "Create Composite" onclick = "createComposite()">
+
+Clear Canvas: <input type = "button" value = "Clear Canvas" onclick = "clearCanvas()">  
+</p>inital commit for greenscreen webpage
